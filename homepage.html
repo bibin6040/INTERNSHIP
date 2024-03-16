@@ -1,0 +1,67 @@
+{% load static %}
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My simple Homepage</title>
+<style>
+body{
+background-image:url("{% static 'pic.jpg' %}");
+}
+header{
+background-color:blue;
+color:red;
+padding:20px 0;
+text-align:center;
+}
+nav{
+background-color:yellow;
+color:gray;
+padding:10px 0;
+text-align:center;
+}
+nav a{
+color:orange;
+text-decoration:none;
+margin:0 10px;
+}
+nav a:hover {
+text-decoration:underline;
+}
+section {
+padding:20px;
+}
+footer
+{
+background-color:pink;
+color:green;
+text-align:center;
+padding:10px 0;
+position:fixed;
+bottom:0;
+width:100%;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to My Simple Homepage</h1>
+</header>
+<nav>
+<a href="">HOME</a>
+<a href="about">ABOUT</a>
+<a href="CONTACT">CONTACT</a>
+<a href="reg">REGISTRATION</a>
+<a href="login">LOGIN</a>
+
+</nav>
+<section>
+<h2>About us</h2>
+<p>This is a simple homepage created using Html.</p>
+</section>
+<footer>
+<p>&copy;2024 my simple Homepage.All rightd reserved</p>
+</footer>
+</body>
+</html>
